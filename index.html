@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hangman Game</title>
+</head>
+
+<body>
+  <div id="wrapper" class="bg-neural-100 text-center h-screen">
+    <div id="title-container" class="mt-8">
+      <h1 id="title" class="text-zinc-900 font-extrabold text-4xl tracking-tighter">Hangman Game</h1>
+      <h2 id="subtitle" class="text-slate-400 text-lg">type letters to the the hidden word</h2>
+    </div>
+    <div id="figure-container" class="flex justify-center mt-28">
+      <div id="gallows" class="relative bottom-24">
+        <div id="gallows-rope" class="bg-rose-500 w-4 h-12 relative top-12 left-40"></div>
+        <div id="gallows-top" class="bg-rose-500 w-34 h-4 relative top-0 left-12"></div>
+        <div id="gallows-post" class="bg-rose-500 w-4 h-64 relative top-0 left-12"></div>
+        <div id="gallows-base" class="bg-rose-500 w-28 h-4 relative top-0 left-0"></div>
+      </div>
+      <div id="hangman-container">
+        <div id="head-container" class="flex justify-center">
+          <div id="head" class="border-4 border-black w-12 h-12 rounded-full relative top-1 invisible"></div>
+        </div>
+        <div id="body-container" class="flex justify-center">
+          <div id="left-arm" class="bg-black w-10 h-1 rounded-lg relative top-6 left-2 rotate-[-45deg] invisible"></div>
+          <div id="torso" class="bg-black w-1 h-24 rounded invisible"></div>
+          <div id="right-arm" class="bg-black w-10 h-1 rounded-lg relative top-6 right-2 rotate-45 invisible"></div>
+        </div>
+        <div id="legs-container" class="flex justify-center">
+          <div id="left-leg" class="bg-black w-14 h-1 rounded-lg relative top-5 left-[19px] rotate-[-70deg] invisible">
+          </div>
+          <div id="right-leg" class="bg-black w-14 h-1 rounded-lg relative top-5 right-[19px] rotate-[70deg] invisible">
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="message" class="text-sky-700 font-bold text-xl tracking-tighter mt-[-30px] mb-3">&nbsp;</p>
+    <p id="dashed" class="uppercase text-3xl font-bold tracking-widest mb-3"></p>
+    <div id="details-container" class="flex-col justify-center items-center mb-6">
+      <p id="wrongs" class="text-slate-400 text-xl tracking-widest line-through uppercase"></p>
+    </div>
+    <button id="restart"
+            class="text-center text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">restart</button>
+  </div>
+  <script type="module">
+    import {
+      init
+    } from './src/app.js'
+    init();
+  </script>
+</body>
+
+</html>

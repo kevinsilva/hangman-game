@@ -1,0 +1,21 @@
+{
+  "name": "hangman-game",
+  "version": "1.0.0",
+  "description": "Hangman game",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "build-css": "tailwindcss -i ./src/style.css -o ./style.css",
+    "build-css-watch": "tailwindcss -i ./src/style.css -o ./style.css --watch",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^3.3.3"
+  }
+}
