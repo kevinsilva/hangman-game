@@ -1,6 +1,6 @@
 # Hangman Game
 
-<p align="center"><img src="./img/hangman.png" width="300"></p>
+<p align="center"><img src="./img/hangman-game.png" width="300"></p>
 
 <div align="center">
 
