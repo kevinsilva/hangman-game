@@ -8,7 +8,7 @@
 
 </div>
 
-A JavaScript version of the classic hangman game where the player has 6 attempts to guess the hidden word.
+A JavaScript desktop version of the classic hangman game where the player has 6 attempts to guess the hidden word.
 
 ## Implementation Details
 
